@@ -10,7 +10,7 @@ let singleDigitPrimeNumbers: Set = [2, 3, 5, 7]
 
 let houseAnimals: Set = ["dog", "cat", "Iguana"]
 let farmAnimals: Set = ["cow", "horse", "sheep", "pig", "dog", "cat"]
-let cityAnimals: Set = ["pidgeon", "mouse"]
+let cityAnimals: Set = ["pigeon", "mouse"]
 
 
 /*
@@ -34,7 +34,6 @@ let animalsAvailableOnAFarmOrAHouse = houseAnimals.intersection(farmAnimals)
  Symmetric Difference
  
  Creates a new Set with values in either set, but not both.
- This is different from union because items that are in both, will not make it in.
  */
 let symmetricDifference = oddDigits.symmetricDifference(singleDigitPrimeNumbers)
 let animalsInEitherAHouseOrAFarmButNotBoth = farmAnimals.symmetricDifference(houseAnimals)
@@ -43,7 +42,7 @@ let animalsInEitherAHouseOrAFarmButNotBoth = farmAnimals.symmetricDifference(hou
 /*
  Subtracting
  
- Creates a new set with values no in the specified set.
+ Creates a new set with values not in the specified set.
  */
 let oddsThatArentPrime = oddDigits.subtracting(singleDigitPrimeNumbers)
 let animalsOnAFarmButNotAHouse = farmAnimals.subtracting(houseAnimals)
